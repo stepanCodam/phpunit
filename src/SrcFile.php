@@ -10,6 +10,9 @@ class SrcFile  {
     public function ageCalc($current, $birth){
         return($current - $birth);
     }
+    public function averageVal(array $values = []){
+        return(array_sum($values)/count($values));
+    }
 
 }
 

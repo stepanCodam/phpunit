@@ -22,6 +22,12 @@ public function testAgeCalc(){
     $output = $obj->ageCalc(2021,1984);
     $this-> assertEquals(37,$output, 'Wrong age calculated, expected: 37');
 }
+public function testaverageVal(){
+    $obj = new SrcFile();
+    $input = [10,10,10,10,10,10,10];
+    $output = $obj->averageVal($input);
+    $this->assertEquals(5,$output,'Wrong average, it shpuld be 6');
+}
 
 }
 
